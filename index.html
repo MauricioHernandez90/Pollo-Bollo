@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#1A1033" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="author" content="Logoscript" />
+
+    <title>Pollo Bollo | Magia, Circo y Humor para tu Evento en Jalisco</title>
+    <meta name="description" content="Shows infantiles, para adultos, baby showers y posadas con Pollo Bollo y Bollo El Tx8. Magia profesional, circo, humor y audio premium. Lagos de Moreno, Jalisco y toda la región." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://pollobollo.mx/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:title" content="Pollo Bollo | Magia, Circo y Humor para tu Evento" />
+    <meta property="og:description" content="6 shows diferentes, 1 mismo nivel de profesionalismo. Del baby shower tierno al Tx8 más picosito." />
+    <meta property="og:url" content="https://pollobollo.mx/" />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Pollo Bollo" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pollo Bollo | Magia, Circo y Humor" />
+    <meta name="twitter:description" content="Shows profesionales para toda ocasión. Cotiza por WhatsApp en 15 min." />
+    <meta name="twitter:image" content="/og-image.jpg" />
+
+    <link rel="icon" type="image/webp" href="/src/assets/logo-pollo-bollo.webp" />
+    <link rel="apple-touch-icon" href="/src/assets/logo-pollo-bollo.webp" />
+
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("pb-theme");
+          // Default en primera visita: modo oscuro
+          var theme = saved === "dark" || saved === "light" ? saved : "dark";
+          document.documentElement.dataset.theme = theme;
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
