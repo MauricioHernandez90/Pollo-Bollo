@@ -177,6 +177,7 @@ const packages: Package[] = [
 const NAV_LINKS = [
   { id: "inicio", label: "Inicio" },
   { id: "video", label: "Video" },
+  { id: "juego", label: "Juego" },
   { id: "paquetes", label: "Paquetes" },
   { id: "plus", label: "Experiencia Plus" },
   { id: "shows", label: "Galería" },
@@ -733,6 +734,14 @@ export default function App() {
                 {heroCtaClicked ? "¡Abriendo WhatsApp!" : "Cotizar Ahora - WhatsApp"}
               </button>
               <a
+                href="/pollo-impacto.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-[52px] px-7 rounded-full bg-gradient-to-r from-[#7C3AED] to-[#C8005A] text-white font-extrabold text-[15px] inline-flex items-center justify-center gap-2 shadow-[0_12px_24px_rgba(124,58,237,0.35)] hover:translate-y-[-1px] hover:shadow-[0_16px_32px_rgba(124,58,237,0.45)] transition-all active:scale-[0.98]"
+              >
+                <span className="text-[18px]">🎮</span> Jugar Pollo Impacto
+              </a>
+              <a
                 href="#paquetes"
                 className="h-[52px] px-7 rounded-full bg-white border-2 border-[#1A1033] text-[#1A1033] font-extrabold text-[15px] flex items-center justify-center hover:bg-[#1A1033] hover:text-white transition active:scale-[0.98]"
               >
@@ -833,6 +842,84 @@ export default function App() {
               Ábrelo en Facebook →
             </a>
           </p>
+        </div>
+      </section>
+
+      {/* Sección Videojuego */}
+      <section id="juego" className="relative py-14 lg:py-20 overflow-hidden bg-gradient-to-br from-[#7C3AED] via-[#C8005A] to-[#FFD60A] max-w-[100vw]">
+        <div className="absolute inset-0 opacity-10 pointer-events-none" aria-hidden="true">
+          <div className="absolute inset-0 bg-[linear-gradient(135deg,transparent_35%,rgba(255,255,255,0.5)_35%,rgba(255,255,255,0.5)_36%,transparent_36%)] bg-[length:48px_48px]" />
+        </div>
+
+        <div className="relative mx-auto max-w-[1240px] px-5 lg:px-8 grid lg:grid-cols-[1.2fr_0.8fr] gap-10 items-center">
+          <div className="min-w-0">
+            <div className="inline-flex items-center gap-2 px-4 h-9 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white font-black text-[12px] tracking-widest uppercase">
+              🎮 Nuevo
+            </div>
+            <h2 className="display mt-5 text-[34px] lg:text-[54px] font-black leading-[0.9] text-white break-words drop-shadow-lg">
+              ¡Juega Pollo <br />
+              Impacto! <br />
+              <span className="text-[var(--yellow)]">Gratis</span>
+            </h2>
+            <p className="mt-4 text-[15px] lg:text-[17px] leading-[1.6] text-white/90 font-medium max-w-[520px]">
+              Nuestro videojuego oficial. Acompaña a Pollo Bollo en una aventura llena de diversión, magia y muchos retos. ¡Disponible ahora mismo, sin descargas!
+            </p>
+
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href="/pollo-impacto.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-14 px-8 rounded-full bg-[#FFFFFF] text-[#7C3AED] font-black text-[16px] inline-flex items-center justify-center gap-2 shadow-[0_12px_32px_rgba(0,0,0,0.25)] hover:translate-y-[-2px] hover:shadow-[0_16px_40px_rgba(0,0,0,0.35)] transition-all active:scale-[0.98]"
+              >
+                <span className="text-[20px]">🎮</span> Jugar Ahora
+              </a>
+              <span className="h-14 px-6 rounded-full bg-white/15 backdrop-blur border border-white/30 text-white font-bold text-[13px] inline-flex items-center gap-2">
+                ✨ Sin registro
+              </span>
+            </div>
+
+            <div className="mt-6 flex items-center gap-4 text-[13px] font-bold text-white/80 flex-wrap">
+              <span className="flex items-center gap-1.5">✔ Funciona en celular</span>
+              <span className="flex items-center gap-1.5">✔ No requiere instalar nada</span>
+            </div>
+          </div>
+
+          <div className="relative lg:h-[400px] flex items-center justify-center min-w-0">
+            <a
+              href="/pollo-impacto.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Jugar Pollo Impacto (abre en nueva pestaña)"
+              className="group/game relative w-full max-w-[320px] aspect-square rounded-[2rem] bg-white/10 backdrop-blur-xl border-4 border-white/30 shadow-[0_20px_60px_rgba(0,0,0,0.3)] flex items-center justify-center overflow-hidden transition-all duration-300 hover:scale-[1.03] hover:bg-white/15 hover:border-white/50 hover:shadow-[0_28px_80px_rgba(0,0,0,0.45)] active:scale-[0.99] cursor-pointer"
+            >
+              <div className="text-[120px] lg:text-[140px] floaty transition-transform duration-300 group-hover/game:scale-110">
+                🎮
+              </div>
+              <div className="absolute bottom-4 left-4 right-4 p-3 rounded-[1.5rem] bg-[#FFFFFF]/90 backdrop-blur-xl border border-white shadow-lg transition-all duration-300 group-hover/game:bg-white group-hover/game:shadow-xl">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-[var(--yellow)] flex items-center justify-center text-[18px] shrink-0 transition-transform duration-300 group-hover/game:rotate-6">
+                    🐥
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <div className="font-black text-[13px] leading-none text-[#1A1033]">
+                      Pollo Impacto
+                    </div>
+                    <div className="text-[11px] text-[#6B6780] font-semibold flex items-center gap-1">
+                      Click para jugar
+                      <span className="inline-block transition-transform duration-300 group-hover/game:translate-x-1">
+                        →
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="absolute top-4 right-4 px-3 h-8 rounded-full bg-[var(--yellow)] text-[#1A1033] font-black text-[11px] uppercase tracking-widest flex items-center gap-1.5 shadow-lg opacity-0 group-hover/game:opacity-100 translate-y-[-8px] group-hover/game:translate-y-0 transition-all duration-300">
+                ▶ Jugar
+              </div>
+            </a>
+          </div>
         </div>
       </section>
 
